@@ -14,11 +14,15 @@ import java.io.File;
 public class TryCatch{
 	
 	public static void main(String [] args) {
+		
+		int c = add(10,20);
+		
+		
 		try {
 			System.out.println("Opened files and n/w connections");
 			int b[] = new int [5];
 			//b[6] = 10;
-			int a = 10/0; //medicine is not available
+			int a = 10/c; //medicine is not available
 			
 		}
 		
@@ -39,4 +43,10 @@ public class TryCatch{
 		}
 		System.out.println("yang will continue with the rest of the program");
 	}
+	
+	private static int add(int i, int j) {
+		int a =8+9;
+		return i + j;
+	}
+	
 }

@@ -16,7 +16,8 @@ public class NestedTryCatch {
 			}catch(ArrayIndexOutOfBoundsException e) {
 				System.out.println("arithmetic exception occured");
 			}
-		}
+		}catch (Exception e){}
+	finally {}
 	}
 
 }
